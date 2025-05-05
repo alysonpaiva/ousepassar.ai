@@ -1,0 +1,14 @@
+[0;1;32m●[0m supervisord.service - Process Monitoring and Control Daemon
+     Loaded: loaded (]8;;file://cloud.alysonpaiva.com.br/usr/lib/systemd/system/supervisord.service/usr/lib/systemd/system/supervisord.service]8;;; [0;1;32menabled[0m; preset: [0;1;38;5;185mdisabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sat 2025-05-03 16:05:20 -03; 6s ago
+    Process: 2194730 ExecStart=/usr/bin/supervisord -c /etc/supervisord.conf (code=exited, status=0/SUCCESS)
+   Main PID: 2194731 (supervisord)
+      Tasks: 2 (limit: 151700)
+     Memory: 44.4M
+        CPU: 394ms
+     CGroup: /system.slice/supervisord.service
+             ├─[0;38;5;245m2194731 /usr/bin/python3 -s /usr/bin/supervisord -c /etc/supervisord.conf[0m
+             └─[0;38;5;245m2194734 /opt/cpanel/ea-php82/root/usr/bin/php /home/alysonpaivacom/public_html/ouseai.alysonpaiva.com.br/artisan queue:work redis --sleep=3 --tries=3 --max-time=3600[0m
+
+May 03 16:05:20 cloud.alysonpaiva.com.br systemd[1]: Starting Process Monitoring and Control Daemon...
+May 03 16:05:20 cloud.alysonpaiva.com.br systemd[1]: Started Process Monitoring and Control Daemon.

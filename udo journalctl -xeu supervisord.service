@@ -1,0 +1,13 @@
+[0;1;31m×[0m supervisord.service - Process Monitoring and Control Daemon
+     Loaded: loaded (]8;;file://cloud.alysonpaiva.com.br/usr/lib/systemd/system/supervisord.service/usr/lib/systemd/system/supervisord.service]8;;; [0;1;32menabled[0m; preset: [0;1;38;5;185mdisabled[0m)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Sat 2025-05-03 16:03:20 -03; 25s ago
+   Duration: 3min 37.294s
+    Process: 2194480 ExecStart=/usr/bin/supervisord -c /etc/supervisord.conf [0;1;31m(code=exited, status=2)[0m
+        CPU: 166ms
+
+May 03 16:03:20 cloud.alysonpaiva.com.br systemd[1]: Starting Process Monitoring and Control Daemon...
+May 03 16:03:20 cloud.alysonpaiva.com.br supervisord[2194480]: Error: Invalid user name apache in section 'program:laravel-worker' (file: '/etc/supervisord.d/laravel-worker.ini')
+May 03 16:03:20 cloud.alysonpaiva.com.br supervisord[2194480]: For help, use /usr/bin/supervisord -h
+May 03 16:03:20 cloud.alysonpaiva.com.br systemd[1]: [0;1;39m[0;1;31m[0;1;39msupervisord.service: Control process exited, code=exited, status=2/INVALIDARGUMENT[0m
+May 03 16:03:20 cloud.alysonpaiva.com.br systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185msupervisord.service: Failed with result 'exit-code'.[0m
+May 03 16:03:20 cloud.alysonpaiva.com.br systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Process Monitoring and Control Daemon.[0m
